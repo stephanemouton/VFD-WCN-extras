@@ -10,37 +10,39 @@ vfds = factory.get_vfd_wcn(vfdwcn.BA63)
 my_vfd = vfds[0]
 
 try:
-    # # Left aligned example
-    # start_value = 0
-    # increment = 1
-    # padding = 0
-    # caption = 'Twitter Followers'
-    # alignment = DisplayAlignment.left
-    # my_counter = BA6XCounter(my_vfd,
-    #                          start_value,
-    #                          increment,
-    #                          padding,
-    #                          caption,
-    #                          alignment)
-    # for j in range(0,4326):
-    #     my_counter.increment()
-    # time.sleep(2)
-    #
-    # # Center aligned example
-    # start_value = 0
-    # increment = 30
-    # padding = 0
-    # caption = 'Altitude'
-    # alignment = DisplayAlignment.center
-    # my_counter = BA6XCounter(my_vfd,
-    #                          start_value,
-    #                          increment,
-    #                          padding,
-    #                          caption,
-    #                          alignment)
-    # for j in range(0, 1000):
-    #     my_counter.increment()
-    # time.sleep(2)
+    # Left aligned example
+    start_value = 0
+    increment = 1
+    padding = 0
+    caption = 'Twitter Followers'
+    alignment = DisplayAlignment.left
+    my_counter = BA6XCounter(my_vfd,
+                             start_value,
+                             increment,
+                             padding,
+                             caption,
+                             alignment)
+    for j in range(0,4326):
+        my_counter.increment()
+
+    input("PRESS ENTER TO CONTINUE")
+
+    # Center aligned example
+    start_value = 0
+    increment = 30
+    padding = 0
+    caption = 'Altitude'
+    alignment = DisplayAlignment.center
+    my_counter = BA6XCounter(my_vfd,
+                             start_value,
+                             increment,
+                             padding,
+                             caption,
+                             alignment)
+    for j in range(0, 1000):
+        my_counter.increment()
+
+    input("PRESS ENTER TO CONTINUE")
 
     # Right aligned example
     start_value = 0
